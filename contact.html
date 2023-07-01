@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Hey there!</title>
+  <title>Reach out</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -32,14 +32,14 @@
       <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Hey there!</h1>
+        <h1>Reach out</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
 
@@ -52,77 +52,91 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
     </div>
-  </header>
-
-  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 text-center">
-          <h2>I'm <span>Abdul (Sam)ad Ansari</span>, a Computer Science student from India.</h2>
-          <p>It's a pleasure to see you here :)</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </header><
 
   <main id="main" data-aos="fade" data-aos-delay="1500">
 
-    <!-- ======= Projects Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>Contact</h2>
+            <p>Don't bother much. Get in touch with me.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
       <div class="container">
 
-        <div class="section-header">
-          <h2>Projects</h2>
-          <p>Some proof of work</p>
-        </div>
+        <div class="row gy-4 justify-content-center">
 
-        <div class="slides-3 swiper">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  A Django based Password Manager that utilizes decentralization as a means to secure user's data(passwords).
-                </p>
-                <div class="profile mt-auto">
-                  <h3><a href="https://github.com/SAMAD101/ToDo-app">PassMan</a></h3>
-                  <h4>Django, Bootstrap, Decentralization</h4>
-                </div>
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Location:</h4>
+                <p>Delhi NCR</p>
               </div>
             </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item testimonial-item align-items-center">
-                <p>
-                  Simple ToDo webapp using Django.
-                </p>
-                <div class="profile mt-auto">
-                  <h3><a href="https://github.com/SAMAD101/ToDo-app">ToDo app</a></h3>
-                  <h4>Django, Bootstrap</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item testimonial-item align-items-center">
-                <p>
-                  Simple DBMS of an airline using Django and SQLite.  
-                </p>
-                <div class="profile mt-auto">
-                  <h3><a href="https://github.com/SAMAD101/Airline">Airline</a></h3>
-                  <h4>Django, Bootstrap</h4>
-                </div>
-              </div>
-            </div>
-
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-discord flex-shrink-0"></i>
+              <div>
+                <h4>Discord:</h4>
+                <p>bluecircle [766507224150966314]</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-matric flex-shrink-0"></i>
+              <div>
+                <h4>Matrix:</h4>
+                <p>@samad101:matrix.org</p>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-9">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
       </div>
     </section>
 
   </main>
-  
+
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader">
