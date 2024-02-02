@@ -618,6 +618,11 @@ h6 {
   transition: 0.3s;
 }
 
+.project-item:hover {
+  background: #1b5f977c;
+  transform: translateY(-10px);
+}
+
 @media (max-width: 1199px) {
   .projects-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
